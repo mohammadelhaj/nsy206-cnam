@@ -39,7 +39,7 @@ The frontend client makes API calls to the backend server when it is running.
 
 ## Database Schema
 
-![Picture1](https://github.com/user-attachments/assets/4526ecf3-04ab-4b28-8cf5-f47f45c36ed0)
+![db](https://github.com/user-attachments/assets/37c40dbe-d5b0-4504-8516-416c0001ea8f)
 
 ## How to  Run
 
