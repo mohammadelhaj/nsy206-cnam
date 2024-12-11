@@ -39,7 +39,7 @@ The frontend client makes API calls to the backend server when it is running.
 
 ## Database Schema
 
-![](https://raw.githubusercontent.com/zhulinn/blog/hexo/source/uploads/post_pics/spring-angular/db.png)
+![Picture1](https://github.com/user-attachments/assets/4526ecf3-04ab-4b28-8cf5-f47f45c36ed0)
 
 ## How to  Run
 
