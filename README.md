@@ -1,4 +1,4 @@
-# Online Shop Application
+# E-store SPA
 
 This project is part of the **NSY205/206 - 2023/2024** curriculum at CNAM University under the guidance of **Prof. Pascal Fares**. It is a full-stack web application for an online shop, implemented using **Spring Boot 2** and **Angular 7**.
 
