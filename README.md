@@ -35,6 +35,8 @@ The application is a **Single Page Application (SPA)** with client-side renderin
 
 ## Database Schema
 The database schema is defined in the `db` directory. Mock data is automatically imported into the database using `import.sql`.
+![db](https://github.com/user-attachments/assets/edc42d40-e203-429f-8921-b06b4223238e)
+
 
 ## Running the Application
 
