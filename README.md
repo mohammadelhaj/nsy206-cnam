@@ -4,7 +4,8 @@ This project is part of the **NSY205/206 - 2023/2024** curriculum at CNAM Univer
 
 ## Overview
 
-The application is a **Single Page Application (SPA)** with client-side rendering. It features separate backend and frontend projects hosted on different branches. The frontend communicates with the backend through API calls while the backend server is running.
+The application is designed as a **Single Page Application (SPA)** with client-side rendering. It comprises distinct backend and frontend projects, where the frontend interacts with the backend via API calls when the backend server is active.
+
 
 ### Key Features
 - **Docker & Docker Compose** for containerization
