@@ -1,29 +1,28 @@
 # E-store SPA
 
-This project is part of the **NSY205/206 - 2023/2024** curriculum at CNAM University under the guidance of **Prof. Pascal Fares**. It is a full-stack web application for an online shop, implemented using **Spring Boot 2** and **Angular 7**.
+Ce projet fait partie du programme **NSY205/206 - 2023/2024** à l'Université du CNAM sous la direction du **Pr. Pascal Fares**. C'est une application web full-stack pour une boutique en ligne, mise en œuvre avec **Spring Boot 2** et **Angular 7**.
 
-## Overview
+## Présentation générale
 
-The application is designed as a **Single Page Application (SPA)** with client-side rendering. It comprises distinct backend and frontend projects, where the frontend interacts with the backend via API calls when the backend server is active.
+L'application est conçue comme une **Application à Page Unique (SPA)** avec un rendu côté client. Elle comprend des projets backend et frontend distincts, où le frontend interagit avec le backend via des appels API lorsque le serveur backend est actif.
 
+### Fonctionnalités principales
+- **Docker & Docker Compose** pour la conteneurisation
+- Paniers persistants et basés sur les cookies
+- API REST pour une interaction client-serveur transparente
+- Gestion du panier et des commandes clients
+- Pagination pour de meilleures performances
+- Fonctionnalité de paiement
+- Catalogue de produits
+- Authentification et gestion des commandes basées sur JWT
 
-### Key Features
-- **Docker & Docker Compose** for containerization
-- Persistent and cookie-based shopping carts
-- REST API for seamless client-server interaction
-- Customer cart and order management
-- Pagination for better performance
-- Checkout functionality
-- Product catalog
-- JWT-based authentication and order management
-
-## Technologies Used
+## Technologies utilisées
 
 ### Backend
 - **Java 11**
 - **Spring Boot 2.2**
 - **Spring Data JPA**
-- **JWT Authentication**
+- **Authentification JWT**
 - **Spring Security**
 - **PostgreSQL**
 - **Hibernate**
@@ -34,68 +33,67 @@ The application is designed as a **Single Page Application (SPA)** with client-s
 - **Angular CLI**
 - **Bootstrap**
 
-## Database Schema
-The database schema is defined in the `db` directory. Mock data is automatically imported into the database using `import.sql`.
+## Schéma de base de données
+Le schéma de base de données est défini dans le répertoire `db`. Les données de test sont automatiquement importées dans la base de données à l'aide de `import.sql`.
 ![db](https://github.com/user-attachments/assets/edc42d40-e203-429f-8921-b06b4223238e)
 
+## Exécution de l'Application
 
-## Running the Application
+### Prérequis
+- **PostgreSQL** pour le backend
+- **Node.js** et **npm** pour le frontend
 
-### Prerequisites
-- **PostgreSQL** for the backend
-- **Node.js** and **npm** for the frontend
-
-### Starting the Application
+### Démarrage de l'Application
 
 #### Backend
-1. Install PostgreSQL and configure the datasource in `application.yml`.
-2. Navigate to the `backend` directory:
+1. Installez PostgreSQL et configurez la source de données dans `application.yml`.
+2. Naviguez vers le répertoire `backend` :
    ```bash
    cd backend
    ```
-3. Build and run the project:
+3. Construisez et lancez le projet :
    ```bash
    mvn install
    mvn spring-boot:run
    ```
-4. The backend server will start at `http://localhost:8080`. Mock data will be imported into the database automatically.
+4. Le serveur backend démarrera à l'adresse `http://localhost:8080`. Les données de test seront automatiquement importées dans la base de données.
 
 #### Frontend
-1. Navigate to the `frontend` directory:
+1. Naviguez vers le répertoire `frontend` :
    ```bash
    cd frontend
    ```
-2. Install dependencies:
+2. Installez les dépendances :
    ```bash
    npm install
    ```
-3. Run the application:
+3. Lancez l'application :
    ```bash
    ng serve
    ```
-4. The frontend client will start at `http://localhost:4200`. Ensure the backend server is running before accessing the frontend.
+4. Le client frontend démarrera à l'adresse `http://localhost:4200`. Assurez-vous que le serveur backend est en cours d'exécution avant d'accéder au frontend.
 
 ### Configuration
-The backend API URL is specified in `src/environments/environment.ts` in the frontend project. By default, it points to `http://localhost:8080/api`.
+L'URL de l'API backend est spécifiée dans `src/environments/environment.ts` dans le projet frontend. Par défaut, elle pointe vers `http://localhost:8080/api`.
 
-## Running with Docker
+## Exécution avec Docker
 
-You can run the entire application using Docker for simplified deployment.
+Vous pouvez exécuter l'intégralité de l'application en utilisant Docker pour un déploiement simplifié.
 
-1. **Build the Backend Project**:
+1. **Construisez le projet Backend** :
    ```bash
    cd backend
    mvn package
    ```
 
-2. **Build the Frontend Project**:
+2. **Construisez le projet Frontend** :
    ```bash
    cd frontend
    npm install
    ng build --prod
    ```
 
-3. **Run the Application with Docker Compose**:
+3. **Lancez l'application avec Docker Compose** :
    ```bash
    docker-compose up --build
-   
+   ```
